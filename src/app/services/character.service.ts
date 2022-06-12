@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 
 export class CharacterService {
 
-  public charactersURL: string = "https://backtolkien.vercel.app/libros"
-  public peliculasURL: string = "https://backtolkien.vercel.app/peliculas/"
+  public charactersURL: string = "https://node-back-tolkien.vercel.app/libros"
+  public peliculasURL: string = "https://node-back-tolkien.vercel.app/peliculas/"
 
 
   constructor(private httpClient: HttpClient) { }
@@ -19,7 +19,7 @@ export class CharacterService {
   }
   
   public getCharacter(characterID: any){
-    return this.httpClient.get(`https://backtolkien.vercel.app/libros/${characterID}`)
+    return this.httpClient.get(`https://node-back-tolkien.vercel.app/libros/${characterID}`)
   }
   public getPeliculas() {
     return this.httpClient.get(this.peliculasURL)
