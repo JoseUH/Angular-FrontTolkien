@@ -16,7 +16,7 @@ export class CharacterdetailComponent implements OnInit {
       const characterID = params.get('characterID')
       
       this.characterService.getCharacter(characterID).subscribe((data: any) => {
-        this.character = data;
+        this.character = data.Libro;
         console.log(this.character)
 
         

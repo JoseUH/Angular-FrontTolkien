@@ -18,7 +18,7 @@ export class CharactersComponent implements OnInit {
       const charactersAPI: CharacterInterface[] = data.libros.map((character: any) => ({
         
     
-        id: character.id,
+        id: character._id,
         titulo: character.titulo,
         year: character.titulo,
         autor: character.autor,

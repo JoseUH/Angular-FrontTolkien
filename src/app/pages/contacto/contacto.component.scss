@@ -31,10 +31,11 @@ img{
         label{
             padding: 40px;
         }
+        
        }
        button{
         @media (max-width: 600px) {
-            width:50%;
+            width:100%;
             height: 40%;
         }
         width: 500px;

@@ -23,18 +23,22 @@ body {
   --background: black;
   --opacity: 50%;
   --border-radius: 0px;
+  --background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
 }
 
 body.light-theme {
   --text-color: black;
-  --background: seashell;
+  --background: white;
   --opacity: 100%;
   --border-radius: 100px;
+  background-color: #00735c;
+  --background-image: url("https://www.transparenttextures.com/patterns/binding-light.png");
+
 }
 
 body {
   background-color: var(--background);
-  background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+  background-image: var(--background-image);
   color: var(--text-color);
   transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
 }
