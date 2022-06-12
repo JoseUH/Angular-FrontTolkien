@@ -1,0 +1,43 @@
+section {
+  @media (max-width: 600px) {
+    height: 60vh;
+  }
+  width: 90%;
+  height: 85vh;
+  white-space: nowrap;
+  overflow: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 10px;
+  &::-webkit-scrollbar {
+    display: hidden;
+  }
+  
+
+  figure {
+    @media (max-width: 600px) {
+      width: 90vw;
+      padding-top: 20px;
+    }
+    overflow: hidden;
+    width: 450px;
+    display: inline-block;
+    text-align: center;
+    div{
+        white-space: pre-wrap;
+    }
+    
+
+    img {
+      @media (max-width: 600px) {
+        width: 250px;
+        height: 400px;
+        padding-top: 20px;
+        object-fit: cover;
+      }
+
+      width: 25vw;
+      object-fit: cover;
+    }
+  }
+}

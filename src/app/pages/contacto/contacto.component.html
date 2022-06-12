@@ -1,0 +1,81 @@
+<img src="../../../assets/images/moria.gif" alt="">
+<div class="formulario">
+
+  <h2>Si quieres pasar, registrate Hobbit!</h2>
+
+
+<form novalidate (ngSubmit)="onSubmit()" [formGroup]="userRegisterForm">
+
+
+  <fieldset>
+    <label for="username">Nombre: </label>
+    <input type="text" id="username" formControlName="username" placeholder="Ej: Bilbo" />
+  
+    <div class="error"
+      *ngIf="
+        !userRegisterForm.get('username')?.valid &&
+        (userRegisterForm.get('username')?.dirty || submitted)
+      "
+    >
+      Has introducido mal tu username
+    </div>
+  </fieldset>
+
+
+  <fieldset>
+    <label for="comarca">Comarca:</label>
+    <input type="text" id="comarca" formControlName="comarca" placeholder="Ej: Bolson Cerrado"/>
+  
+    <div class="error"
+      *ngIf="
+        !userRegisterForm.get('comarca')?.valid &&
+        (userRegisterForm.get('comarca')?.dirty || submitted)
+      "
+    >
+      Has introducido mal tu comarca
+    </div>
+  </fieldset>
+
+
+
+  <fieldset>
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password" />
+    <div class="error"
+      *ngIf="
+        !userRegisterForm.get('password')?.valid &&
+        (userRegisterForm.get('password')?.dirty || submitted)
+      "
+    >
+      Has introducido mal tu password
+    </div>
+  </fieldset>
+
+
+
+
+  <fieldset>
+    <label for="passwordRepeat">Repite tu password:</label>
+    <input
+      type="password"
+      id="passwordRepeat"
+      formControlName="passwordRepeat"
+    />
+    <div class="error"
+      *ngIf="
+        !userRegisterForm.get('passwordRepeat')?.valid &&
+        (userRegisterForm.get('passwordRepeat')?.dirty || submitted)
+      "
+    >
+      Has introducido mal el segundo password
+    </div>
+  </fieldset>
+
+
+
+
+  <button type="submit" [disabled]="!userRegisterForm.valid">Register</button>
+
+
+  
+</form>

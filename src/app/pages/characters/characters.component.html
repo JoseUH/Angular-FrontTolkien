@@ -1,0 +1,11 @@
+<section class="characters">
+    <app-charactercard
+      *ngFor="let character of characterList"
+      [character]="character"
+      routerLink="{{ character.id }}"
+    ></app-charactercard>
+  </section>
+  
+
+ 
+  

@@ -1,0 +1,19 @@
+.home{
+    
+    p{ 
+        font-family:var(--font-family);
+        color: white;
+        font-size: 30px;
+        z-index: 1;
+        position: absolute;
+        margin-left: 120px;
+        margin-right: 100px;
+        margin-top: 200px;
+    }
+    img{
+        
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+    }
+}

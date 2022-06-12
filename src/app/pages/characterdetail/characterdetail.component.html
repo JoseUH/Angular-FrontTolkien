@@ -1,0 +1,6 @@
+<figure *ngIf="character">
+  <h2>{{ character.titulo }}</h2>
+  <img src="{{ character.portada }}" alt="{{ character.titulo }}" />
+</figure>
+<p *ngIf="!character">Loading</p>
+<a routerLink="../">Volver a libros</a>

@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//GLOBAL STYLES
+
+@import url("https://fonts.googleapis.com/css2?family=Bilbo&family=Londrina+Outline&family=Martel+Sans:wght@200;300;400;700&display=swap");
+
+body {
+  --font-family: "Bilbo", cursive;
+  --text-color: seashell;
+  --background: black;
+  --opacity: 50%;
+  --border-radius: 0px;
+}
+
+body.light-theme {
+  --text-color: black;
+  --background: seashell;
+  --opacity: 100%;
+  --border-radius: 100px;
+}
+
+body {
+  background-color: var(--background);
+  background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+  color: var(--text-color);
+  transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+}

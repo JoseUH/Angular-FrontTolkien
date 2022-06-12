@@ -1,0 +1,41 @@
+
+
+    figure{
+        @media (max-width: 600px) { 
+            width: 90vw;
+            margin-left: 20px;
+            
+        }
+        
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        
+        
+        
+    
+        & img{
+            @media (max-width: 600px) { 
+                width: 300px;
+                
+            }
+            padding: 10px;
+            width: 300px;
+            height:420px;
+
+            object-fit: cover;
+            border-radius: 10px;
+            
+        }
+    }
+    
+
+
+   
+    
+
+    

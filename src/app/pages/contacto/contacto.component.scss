@@ -1,0 +1,45 @@
+img{
+    @media (max-width: 600px) {
+    height: 90vh;
+    width: 100vw;
+    object-fit:fill;
+}
+    position: absolute;
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+        z-index: -1;
+}
+.formulario{
+    h2{
+        @media (max-width: 600px) {
+            font-size: 20px;
+        }
+    }
+    
+   
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    form{
+       padding: 80px;
+       fieldset{
+        padding: 20px;
+        label{
+            padding: 40px;
+        }
+       }
+       button{
+        @media (max-width: 600px) {
+            width:50%;
+            height: 40%;
+        }
+        width: 500px;
+        height: 40px;
+       }
+    }
+}
+

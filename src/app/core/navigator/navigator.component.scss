@@ -1,0 +1,46 @@
+nav {
+ 
+   
+  
+  
+     
+        ul {
+          
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 10vh;
+    
+          button{
+              padding: 0;
+              border: none;
+              font: inherit;
+              color: inherit;
+              background-color: transparent;
+              cursor: pointer;
+          }
+      
+          a {
+            font-family:var(--font-family);
+            font-size: 2rem;
+          
+            
+            transition: all 0.5s ease-in-out;
+            color:var( --text-color);
+            padding: 10px;
+      
+            &:hover {
+              
+              height: 100px;
+              color:var(--text-color);
+              background-color: 
+              #07476a;
+              background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+              border-bottom-left-radius: 30px;
+              
+            }
+          }
+          
+        }
+      }
+  

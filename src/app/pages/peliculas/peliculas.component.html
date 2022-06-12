@@ -1,0 +1,10 @@
+<section>
+  <figure *ngFor="let pelicula of peliculasList">
+    <div>
+    <h2>{{ pelicula.titulo }}</h2>
+  </div>
+
+    <img src="{{ pelicula.caratula }}" alt="{{ pelicula.titulo }}" />
+    <p>{{ pelicula.year }}</p>
+  </figure>
+</section>
